@@ -4,7 +4,7 @@ let roomId = document.getElementById("room");
 let joinButton = document.getElementById("join");
 export let userPage = document.getElementsByClassName("user-page")[0];
 export let messagePage = document.getElementsByClassName("second-page")[0];
-export let socket = io.connect("http://localhost:5000");
+export let socket = io.connect("https://lead-simple-grill.glitch.me");
 
 //Event Listener for getting the user name from the user
 userName.addEventListener("keypress", function (event) {
