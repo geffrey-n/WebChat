@@ -6,15 +6,15 @@ let express = require("express");
 let app = express();
 
 // Declaration of gloval variables
-let host = "localhost";
 let port = 5000;
 let userStatusArray = [];
 
 //Creating the server
-var server = app.listen(port, host, function () {
-  console.log(`Server is running on http://${host}:${port}`);
+var server = app.listen(port, function () {
+  console.log(`Server is running on ${port}`);
 });
 
+app.use(express.static(process.cwd()));
 // Making the web socket connection
 var io = socketIO(server);
 
