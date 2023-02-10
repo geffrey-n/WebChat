@@ -26,7 +26,8 @@ showOnlineUsers.addEventListener("click", function () {
 // Event Listener for getting back to the user page
 exit.addEventListener("click", function () {
   socket.emit("user-left", userName.value);
-  location.reload();
+  userPage.style.display = "block";
+  messagePage.style.display = "";
 });
 
 // Event Listener for displaying the user input in the message box
