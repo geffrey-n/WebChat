@@ -1,0 +1,151 @@
+/* Entire body of the second page */
+.second-page {
+  display: none;
+  animation: upSlide 3s;
+  height: 40vw;
+  width: 60vw;
+  background-color: rgba(150, 0, 220, 0.2);
+  border-radius: 5vw;
+  border-color: black;
+  margin-left: 18.5vw;
+  margin-top: 6vw;
+}
+
+/* Logo and name of the second page */
+.name-logo {
+  display: grid;
+  grid-template-rows: 5vw;
+  grid-template-columns: 15vw 10vw 27vw 13vw;
+  margin-bottom: 4vw;
+}
+
+/* Logo of the web application */
+#logo-app {
+  height: 6.1vw;
+  padding-left: 6.2vw;
+  padding-top: 2vw;
+}
+
+/* Name of the web application */
+#name-app {
+  font-family: Waltograph;
+  color: white;
+  padding-left: 3vw;
+  padding-top: 3.5vw;
+  font-size: 3.5vw;
+}
+
+/* Displaying the online users */
+.show-online-users {
+  margin-top: 3.5vw;
+  margin-left: 1.5vw;
+}
+
+#online-users {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  cursor: pointer;
+  font-family: cursive;
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  border-radius: 5vw;
+  border-color: transparent;
+  background-color: rgba(150, 0, 220, 0.5);
+}
+
+/* Exit of the second page */
+.exit-button {
+  margin-top: 3.5vw;
+  margin-left: 2vw;
+}
+
+#exit {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  cursor: pointer;
+  font-family: cursive;
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  border-radius: 5vw;
+  border-color: transparent;
+  background-color: rgb(255, 0, 0, 0.5);
+}
+
+/* Entire message box */
+.text {
+  display: grid;
+  grid-template-rows: 5vw;
+  grid-template-columns: 33vw 10vw;
+  text-align: center;
+  padding-left: 12.5vw;
+  padding-top: 0.8vw;
+}
+
+/* Message field */
+#text-message {
+  font-family: cursive;
+  font-size: 1.3vw;
+  padding-left: 1vw;
+  padding-right: 4.8vw;
+  width: 30.2vw;
+  height: 3vw;
+  border-color: transparent;
+  background-color: white;
+  border-radius: 5vw;
+}
+
+/* Send button for the message */
+#send-button {
+  margin-top: 0.25vw;
+  padding-top: 0.5vw;
+  padding-left: 0.3vw;
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+  border-radius: 3vw;
+  border-color: transparent;
+  background-color: rgba(150, 0, 220);
+}
+
+#send {
+  height: 2vw;
+  width: 2vw;
+}
+
+/* Placeholder property for the message box */
+#text-message::placeholder {
+  text-align: center;
+}
+
+/* Hovering effects */
+/* Hovering of online users button */
+#online-users:hover {
+  font-size: 1.02vw;
+  background-color: deeppink;
+  color: whitesmoke;
+}
+
+/* Hovering of exit button */
+#exit:hover {
+  font-size: 1.02vw;
+  background-color: rgb(255, 0, 0, 0.9);
+  color: whitesmoke;
+}
+
+/* Hovering of send button */
+#send-button:hover {
+  background-color: deeppink;
+}
+
+/* Animation for the second page */
+@keyframes upSlide {
+  0% {
+    margin-top: 70%;
+  }
+}

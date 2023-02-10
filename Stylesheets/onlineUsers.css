@@ -1,0 +1,40 @@
+/* Content of the online users */
+#users {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 0.5vw;
+  color: whitesmoke;
+  background-color: rgba(150, 0, 220, 0.5);
+  height: max-content;
+  max-height: 25vw;
+  width: max-content;
+  max-width: 18vw;
+  min-width: 10vw;
+  border-radius: 1vw;
+  overflow-y: scroll;
+  padding-right: 1vw;
+}
+
+/* List properties for the content of online users */
+ul {
+  list-style: none;
+  margin: 0.5vw 0vw 0.5vw 0vw;
+  padding: 0;
+}
+
+/* Property for the bullet in the list */
+ul li::before {
+  content: "\2022";
+  color: deeppink;
+  font-size: 1.5vw;
+  padding: 0.2vw;
+  padding-left: 1vw;
+  display: inline-block;
+  width: 1.1vw;
+}
+
+/* Scrollbar property for hiding the scrollbar */
+#users::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,166 @@
+/* Importing the stylesheets*/
+@import url("../Stylesheets/message.css");
+@import url("../Stylesheets/onlineUsers.css");
+@import url("../Stylesheets/sendReceive.css");
+
+/* Importing the Waltograph font */
+@font-face {
+  font-family: Waltograph;
+  src: url("../waltograph/waltographUI.ttf");
+}
+
+/* Background for the entire page */
+body {
+  background-image: url("../Assets/Icons/Background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Entire front page */
+.user-page {
+  margin-left: 32vw;
+  margin-top: 22vh;
+  height: 30vw;
+  width: 30vw;
+  background-color: rgba(150, 0, 220, 0.2);
+  border-radius: 5vw;
+  border-color: black;
+}
+
+/* Logo and name in the front page */
+.logo-name {
+  animation: slideUp 3s;
+  display: grid;
+  grid-template-rows: 7vw;
+  grid-template-columns: 10vw 20vw;
+  margin-bottom: 4vw;
+}
+
+/* Logo of the web application */
+#app-logo {
+  animation: slideLeft 4s;
+  height: 6.1vw;
+  padding-top: 3vw;
+  padding-left: 4.3vw;
+}
+
+/* Nmae of the web application */
+#app-name {
+  font-family: Waltograph;
+  animation: slideRight 4s;
+  color: white;
+  padding-top: 4.5vw;
+  padding-left: 1.3vw;
+  font-size: 3.5vw;
+}
+
+/* Input fields of the front page */
+.user-name {
+  text-align: center;
+  margin-top: 4vw;
+}
+
+#name,
+#room,
+#join {
+  font-family: cursive;
+  padding: 0.6vw;
+  animation: fadeIn 5s;
+  font-size: 1.8vw;
+  text-align: center;
+  margin: 1vw;
+  margin-bottom: 1.5vw;
+  border-radius: 5vw;
+}
+
+#join {
+  font-size: 1.5vw;
+  cursor: pointer;
+  padding: 0.3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: white;
+  border-color: transparent;
+  background-color: rgba(150, 0, 220, 0.5);
+}
+
+/* Error message */
+#error {
+  position: absolute;
+  color: red;
+  top: 27.7vw;
+  font-size: 1.2vw;
+  left: 41vw;
+  font-family: cursive;
+}
+
+/* Optional message */
+#optional {
+  position: absolute;
+  color: yellow;
+  top: 34vw;
+  font-size: 1.2vw;
+  left: 45.4vw;
+  font-family: cursive;
+}
+
+/* Hovering effect */
+#join:hover {
+  font-size: 1.8vw;
+  background-color: deeppink;
+  color: whitesmoke;
+}
+
+/* Animation of the front page */
+/* Animation of the entire front page */
+@keyframes slideUp {
+  0% {
+    margin-top: 200%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+/* Animation of input fields */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation of the logo */
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-22%);
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* Animation of the application name */
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

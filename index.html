@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Declaration of the header tag of the web page -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Stylesheets/user.css" />
+    <link rel="icon" type="image/x-icon" href="./Assets/Icons/Favicon.png" />
+    <title>Chat Application</title>
+  </head>
+
+  <!-- Declaration of the body tag of the web page -->
+  <body>
+    <!-- Beginning of the front page -->
+    <section class="front-page">
+      <div class="user-page">
+        <!-- Logo and Name -->
+        <div class="logo-name">
+          <img id="app-logo" src="./Assets/Icons/Logo.png" />
+          <div id="app-name">Chatify</div>
+        </div>
+        <!-- Input fields such as user name and room id -->
+        <div class="user-name">
+          <span id="error"></span>
+          <span id="optional"></span>
+          <input
+            id="name"
+            type="text"
+            placeholder="User Name"
+            autocomplete="off"
+          />
+          <input
+            id="room"
+            type="text"
+            placeholder="Room ID"
+            autocomplete="off"
+          />
+          <br />
+          <input id="join" type="submit" value="Join"></input>
+        </div>
+      </div>
+    </section>
+    <!-- End of the front page -->
+    <!-- Beginning of the second page -->
+    <section class="second-page">
+      <div class="message-page">
+        <!-- Top portion of the second page -->
+        <div class="name-logo">
+          <!-- Online users -->
+          <div class="show-online-users">
+            <input id="online-users" type="button" value="Show Online Users"></input>
+            <div id="users">
+              <ul>
+              </ul>
+            </div>
+          </div>
+          <!-- Name and Logo -->
+          <img id="logo-app" src="./Assets/Icons/Logo.png" />
+          <div id="name-app">Chatify</div>
+          <!-- Exit button of the second page -->
+          <div class="exit-button">
+            <input id="exit" type="button" value="Exit"></input>
+          </div>
+        </div>
+        <!-- Middle portion of the secong page -->
+        <div class="message"></div>
+        <!-- Bottom portion of the second page -->
+        <!-- User input message -->
+        <div class="text">
+          <input
+            id="text-message"
+            type="text"
+            placeholder="Enter the message"
+          />
+          <button id="send-button">
+            <img id="send" src="./Assets/Icons/Send.png" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End of the second page -->
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script type="module" src="./Scripts/user.js"></script>
+    <script type="module" src="./Scripts/message.js"></script>
+  </body>
+</html>
